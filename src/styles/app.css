@@ -18,7 +18,7 @@ hr {
 }
 
 .avatar {
-    position: absolute;
+    /* position: absolute; */
     right: 60px;
 }
 
@@ -34,4 +34,8 @@ hr {
 
 .type label {
     color: #EEF3FD;
+}
+
+.white-text input {
+    color: #fff;
 }

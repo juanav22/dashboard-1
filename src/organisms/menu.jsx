@@ -25,14 +25,14 @@ const tier = [
 function Menu() {
   return (
     <Box className= 'Menu-Box'>
-      <Avatar className= 'avatar' src={logo} sx={{ marginTop: 2, marginBottom: 2 }} />
+      <Avatar className= 'avatar' src={logo}  />
       <Box className= 'type'>
         <Autocomplete
           disablePortal
           id="combo-box-demo"
           options={tier}
-          sx={{ width: 200 }}
-          renderInput={(params) => <TextField {...params} label="Acmen Inc" />}
+          sx={{ width: 200}}
+          renderInput={(params) => <TextField {...params} label="Acmen Inc" className="white-text" />}
         /> 
       </Box>
       <hr />
@@ -90,83 +90,3 @@ function Menu() {
   );
 }
 export default Menu;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-
-// import Grid from '@mui/material/Unstable_Grid2';
-// import { Avatar, Box } from '@mui/material';
-// import { UnfoldMoreOutlined, SignalCellularAltOutlined, PeopleOutlineOutlined, ShoppingBagOutlined, PersonOutlined, SettingsOutlined, LockOutlined, PersonAddAlt1Outlined, CancelOutlined } from '@mui/icons-material';
-// import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
-
-// const BG_ICON = { color: '#EEF3FD' };
-
-// function Menu () {
-//   return (
-//     <Box sx={{display:'flex', alignItems: "center", bgcolor: '#101827'}}>
-//       <Grid container>
-//         <Grid item>
-//           <List item>
-//             <Avatar src='https://search.brave.com/images?q=rosas'/>
-//           </List>
-//         </Grid>
-//         <Grid item>
-//           <List item>
-//             <ListItem >
-//                 <SignalCellularAltOutlined sx={BG_ICON}/>
-//                 <ListItemText primary="Dashboard" sx={BG_ICON}/>
-//             </ListItem>
-//             <ListItem >
-//               <PeopleOutlineOutlined sx={BG_ICON}/>
-//               <ListItemText primary="Customers" sx={BG_ICON}/>
-//             </ListItem>
-//             <ListItem >
-//               <ShoppingBagOutlined sx={BG_ICON}/>
-//               <ListItemText primary="Products" sx={BG_ICON}/>
-//             </ListItem>
-//             <ListItem >
-//               <PersonOutlined sx={BG_ICON}/>
-//               <ListItemText primary="Account" sx={BG_ICON}/>
-//             </ListItem>
-//             <ListItem>
-//               <SettingsOutlined sx={BG_ICON}/>
-//               <ListItemText primary="Settings" sx={BG_ICON}/>
-//             </ListItem>
-//             <ListItem>
-//               <LockOutlined sx={BG_ICON}/>
-//               <ListItemText primary="Login" sx={BG_ICON}/>
-//             </ListItem>
-//             <ListItem>
-//               <PersonAddAlt1Outlined sx={BG_ICON}/>
-//               <ListItemText primary="Register" sx={BG_ICON}/>
-//             </ListItem>
-//             <ListItem>
-//               <CancelOutlined sx={BG_ICON} primary="Error icon" />
-//               <ListItemText primary="Error" sx={BG_ICON}/>
-//             </ListItem>
-//           </List>
-//         </Grid>
-//       </Grid>
-//     </Box>
-//   );
-// }
-
-// export default Menu;

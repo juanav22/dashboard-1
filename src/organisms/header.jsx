@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Grid from '@mui/material/Unstable_Grid2';
-import { Avatar, Paper, IconButton } from '@mui/material';
+import { Avatar, Paper, IconButton, InputBase } from '@mui/material';
 import { PeopleOutlineOutlined, NotificationsNoneOutlined, SearchOutlined } from '@mui/icons-material';
 
 const ICON_STYLES = { color: '#9CA3AF' };
@@ -12,9 +12,13 @@ function Header() {
     <Paper elevation={3}>
       <Grid container sx={{display:'flex', justifyContent:"space-between", alignItems: "center"}} >
         <Grid item>
-          <IconButton>
-            <SearchOutlined sx={ICON_STYLES} />
+          <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
+            <SearchOutlined />
           </IconButton>
+          <InputBase
+            sx={{ ml: 1, flex: 1 }}
+            placeholder="Search here"
+          />
         </Grid>
         <Grid item >
           <IconButton>
